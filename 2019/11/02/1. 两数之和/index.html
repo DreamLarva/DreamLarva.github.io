@@ -10,17 +10,17 @@
 <title>1. 两数之和 - Hexo</title>
 
 
-    <meta name="description" content="leetcode 本题链接 题目描述给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。 你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素 示例: 给定 nums = [2, 7, 11, 15], target = 9    因为 nums[0] + nums[1] = 2 + 7 = 9">
+    <meta name="description" content="leetcode 本题链接 题目描述给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。 你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素 示例:给定 nums = [2, 7, 11, 15], target = 9 因为 nums[0] + nums[1] = 2 + 7 = 9   所以返回">
 <meta property="og:type" content="article">
 <meta property="og:title" content="1. 两数之和">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;02&#x2F;1.%20%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="leetcode 本题链接 题目描述给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。 你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素 示例: 给定 nums = [2, 7, 11, 15], target = 9    因为 nums[0] + nums[1] = 2 + 7 = 9">
+<meta property="og:description" content="leetcode 本题链接 题目描述给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。 你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素 示例:给定 nums = [2, 7, 11, 15], target = 9 因为 nums[0] + nums[1] = 2 + 7 = 9   所以返回">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;og_image.png">
-<meta property="og:updated_time" content="2019-11-03T01:41:16.449Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;thumbnails&#x2F;thumb-1920-265693.png">
+<meta property="og:updated_time" content="2019-11-04T12:47:58.745Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;og_image.png">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;thumbnails&#x2F;thumb-1920-265693.png">
 
 
 
@@ -130,6 +130,12 @@
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
 <div class="card">
     
+    <div class="card-image">
+        <span  class="image is-7by1">
+            <img class="thumbnail" src="/images/thumbnails/thumb-1920-265693.png" alt="1. 两数之和">
+        </span>
+    </div>
+    
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
@@ -140,7 +146,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    2 分钟 读完 (大约 367 个字)
+                    3 分钟 读完 (大约 394 个字)
                 </span>
                 
                 
@@ -156,14 +162,9 @@
             <p><a href="https://leetcode-cn.com/problems/two-sum/" target="_blank" rel="noopener">leetcode 本题链接</a></p>
 <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。</p>
 <p>你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素</p>
-<h3 id="示例"><a href="#示例" class="headerlink" title="示例:"></a>示例:</h3><ul>
-<li><p>给定 nums = [2, 7, 11, 15], target = 9  </p>
-</li>
-<li><p>因为 nums[0] + nums[1] = 2 + 7 = 9  </p>
-</li>
-<li><p>所以返回 [0, 1]</p>
-</li>
-</ul>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例:"></a>示例:</h3><p>给定 nums = [2, 7, 11, 15], target = 9</p>
+<p>因为 nums[0] + nums[1] = 2 + 7 = 9  </p>
+<p>所以返回 [0, 1]</p>
 <ol>
 <li>暴力解法 两层遍历 （虽然可以通过，但是速度很慢）</li>
 </ol>
@@ -212,6 +213,7 @@
 <td>Javascript</td>
 </tr>
 </tbody></table>
+<p><a href="https://github.com/DreamLarva/js-ts-Algorithms/blob/master/leetcode/1.%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C.ts" target="_blank" rel="noopener">仓库本题地址</a></p>
 
         </div>
         
@@ -223,6 +225,20 @@
 
 
 
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/11/04/2.%20%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">2. 两数相加</span>
+            </a>
+        </div>
+        
+        
+    </div>
+</div>
 
 
 </div>
@@ -269,7 +285,7 @@
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        1
+                        2
                     </p>
                 </div>
             </div>
@@ -370,9 +386,28 @@
         
         <article class="media">
             
+            <a href="/2019/11/04/2.%20%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnails/121150.jpg" alt="2. 两数相加">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-04T10:29:29.611Z">2019-11-04</time></div>
+                    <a href="/2019/11/04/2.%20%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0/" class="title has-link-black-ter is-size-6 has-text-weight-normal">2. 两数相加</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/11/02/1.%20%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="1. 两数之和">
+                    <img class="thumbnail" src="/images/thumbnails/thumb-1920-265693.png" alt="1. 两数之和">
                 </p>
             </a>
             
@@ -404,7 +439,7 @@
                     <span class="level-item">十一月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">1</span>
+                    <span class="level-item tag">2</span>
                 </span>
             </a>
         </li>
@@ -446,9 +481,28 @@
         
         <article class="media">
             
+            <a href="/2019/11/04/2.%20%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnails/121150.jpg" alt="2. 两数相加">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-04T10:29:29.611Z">2019-11-04</time></div>
+                    <a href="/2019/11/04/2.%20%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0/" class="title has-link-black-ter is-size-6 has-text-weight-normal">2. 两数相加</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/11/02/1.%20%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="1. 两数之和">
+                    <img class="thumbnail" src="/images/thumbnails/thumb-1920-265693.png" alt="1. 两数之和">
                 </p>
             </a>
             
@@ -480,7 +534,7 @@
                     <span class="level-item">十一月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">1</span>
+                    <span class="level-item tag">2</span>
                 </span>
             </a>
         </li>
