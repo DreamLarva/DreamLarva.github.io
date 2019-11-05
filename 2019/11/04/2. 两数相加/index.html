@@ -10,15 +10,15 @@
 <title>2. 两数相加 - Hexo</title>
 
 
-    <meta name="description" content="leetcode 本题链接 题目描述给出两个非空的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序的方式存储的，并且它们的每个节点只能存储 一位 数字。 如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。 您可以假设除了数字 0 之外，这两个数都不会以 0 开头。 示例:输入：(2 -&amp;gt; 4 -&amp;gt; 3) + (5 -&amp;gt; 6 -&amp;gt; 4)   输出：">
+    <meta name="description" content="leetcode 本题链接 题目描述给出两个非空的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序的方式存储的，并且它们的每个节点只能存储 一位 数字。 如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。 您可以假设除了数字 0 之外，这两个数都不会以 0 开头。 示例: 输入：(2 -&amp;gt; 4 -&amp;gt; 3) + (5 -&amp;gt; 6 -&amp;gt; 4)输出：7">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2. 两数相加">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;04&#x2F;2.%20%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="leetcode 本题链接 题目描述给出两个非空的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序的方式存储的，并且它们的每个节点只能存储 一位 数字。 如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。 您可以假设除了数字 0 之外，这两个数都不会以 0 开头。 示例:输入：(2 -&amp;gt; 4 -&amp;gt; 3) + (5 -&amp;gt; 6 -&amp;gt; 4)   输出：">
+<meta property="og:description" content="leetcode 本题链接 题目描述给出两个非空的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序的方式存储的，并且它们的每个节点只能存储 一位 数字。 如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。 您可以假设除了数字 0 之外，这两个数都不会以 0 开头。 示例: 输入：(2 -&amp;gt; 4 -&amp;gt; 3) + (5 -&amp;gt; 6 -&amp;gt; 4)输出：7">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;thumbnails&#x2F;121150.webp">
-<meta property="og:updated_time" content="2019-11-04T12:53:02.002Z">
+<meta property="og:updated_time" content="2019-11-05T10:57:34.295Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;thumbnails&#x2F;121150.webp">
 
@@ -143,7 +143,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    3 分钟 读完 (大约 443 个字)
+                    3 分钟 读完 (大约 445 个字)
                 </span>
                 
                 
@@ -160,10 +160,10 @@
 <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给出两个<strong>非空</strong>的链表用来表示两个非负的整数。其中，它们各自的位数是按照 <strong>逆序</strong><br>的方式存储的，并且它们的每个节点只能存储 <strong>一位</strong> 数字。</p>
 <p>如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。</p>
 <p>您可以假设除了数字 0 之外，这两个数都不会以 0 开头。</p>
-<h3 id="示例"><a href="#示例" class="headerlink" title="示例:"></a>示例:</h3><p>输入：(2 -&gt; 4 -&gt; 3) + (5 -&gt; 6 -&gt; 4)  </p>
-<p>输出：7 -&gt; 0 -&gt; 8  </p>
-<p>原因：342 + 465 = 807  </p>
-<ol>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例:"></a>示例:</h3><blockquote>
+<p>输入：(2 -&gt; 4 -&gt; 3) + (5 -&gt; 6 -&gt; 4)<br>输出：7 -&gt; 0 -&gt; 8<br>原因：342 + 465 = 807  </p>
+</blockquote>
+<h3 id="题解"><a href="#题解" class="headerlink" title="题解:"></a>题解:</h3><ol>
 <li>直接上代码 注意进位的问题 ,当两个链表长短不同时情况即可<figure class="highlight typescript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> addTwoNumbers1 = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">l1: ListNode&lt;<span class="hljs-built_in">number</span>&gt;, l2: ListNode&lt;<span class="hljs-built_in">number</span>&gt;</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">const</span> firstNode = <span class="hljs-keyword">new</span> ListNode((l1.val + l2.val) % <span class="hljs-number">10</span>);</span><br><span class="line">    <span class="hljs-keyword">let</span> currentNode = firstNode;</span><br><span class="line">    <span class="hljs-keyword">let</span> added = l1.val + l2.val &gt;= <span class="hljs-number">10</span> ? <span class="hljs-number">1</span> : <span class="hljs-number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">while</span> (l1.next !== <span class="hljs-literal">null</span> || l2.next !== <span class="hljs-literal">null</span>) &#123;</span><br><span class="line">        l1 = l1.next ? l1.next : <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">0</span>);</span><br><span class="line">        l2 = l2.next ? l2.next : <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">0</span>);</span><br><span class="line">        <span class="hljs-keyword">let</span> sum = l1.val + l2.val + added;</span><br><span class="line">        added = sum &gt;= <span class="hljs-number">10</span> ? <span class="hljs-number">1</span> : <span class="hljs-number">0</span>;</span><br><span class="line">        sum = sum % <span class="hljs-number">10</span>;</span><br><span class="line">        currentNode.next = <span class="hljs-keyword">new</span> ListNode(sum);</span><br><span class="line">        currentNode = currentNode.next;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">if</span> (added &gt; <span class="hljs-number">0</span>) &#123;</span><br><span class="line">        currentNode.next = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">return</span> firstNode;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <table>
 <thead>
@@ -223,6 +223,13 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/11/05/3.%20%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">3. 无重复字符的最长子串</span>
+            </a>
+        </div>
+        
         
         <div class="level-end">
             <a class="level level-item has-link-grey  article-nav-next" href="/2019/11/02/1.%20%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/">
@@ -279,7 +286,7 @@
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        2
+                        3
                     </p>
                 </div>
             </div>
@@ -380,6 +387,25 @@
         
         <article class="media">
             
+            <a href="/2019/11/05/3.%20%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnails/293924.webp" alt="3. 无重复字符的最长子串">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-05T10:48:40.627Z">2019-11-05</time></div>
+                    <a href="/2019/11/05/3.%20%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2/" class="title has-link-black-ter is-size-6 has-text-weight-normal">3. 无重复字符的最长子串</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/11/04/2.%20%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnails/121150.webp" alt="2. 两数相加">
@@ -433,7 +459,7 @@
                     <span class="level-item">十一月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">2</span>
+                    <span class="level-item tag">3</span>
                 </span>
             </a>
         </li>
@@ -475,6 +501,25 @@
         
         <article class="media">
             
+            <a href="/2019/11/05/3.%20%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnails/293924.webp" alt="3. 无重复字符的最长子串">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-05T10:48:40.627Z">2019-11-05</time></div>
+                    <a href="/2019/11/05/3.%20%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2/" class="title has-link-black-ter is-size-6 has-text-weight-normal">3. 无重复字符的最长子串</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/11/04/2.%20%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnails/121150.webp" alt="2. 两数相加">
@@ -528,7 +573,7 @@
                     <span class="level-item">十一月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">2</span>
+                    <span class="level-item tag">3</span>
                 </span>
             </a>
         </li>
