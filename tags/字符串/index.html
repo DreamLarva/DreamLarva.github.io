@@ -7,21 +7,17 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>3. 无重复字符的最长子串 - Hexo</title>
+<title>标签: 字符串 - Hexo</title>
 
 
-    <meta name="description" content="leetcode 本题链接 题目描述给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。 示例:示例 1:    输入: “abcabcbb”输出: 3解释: 因为无重复字符的最长子串是 “abc”，所以其长度为 3。  示例 2:    输入: “bbbbb”输出: 1解释: 因为无重复字符的最长子串是 “b”，所以其长度为 1。  示例 3:    输入: “pwwkew”输出:">
-<meta name="keywords" content="哈希表,字符串,滑动窗口">
-<meta property="og:type" content="article">
-<meta property="og:title" content="3. 无重复字符的最长子串">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;05&#x2F;3.%20%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2&#x2F;index.html">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;tags&#x2F;%E5%AD%97%E7%AC%A6%E4%B8%B2&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="leetcode 本题链接 题目描述给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。 示例:示例 1:    输入: “abcabcbb”输出: 3解释: 因为无重复字符的最长子串是 “abc”，所以其长度为 3。  示例 2:    输入: “bbbbb”输出: 1解释: 因为无重复字符的最长子串是 “b”，所以其长度为 1。  示例 3:    输入: “pwwkew”输出:">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;thumbnails&#x2F;293924.webp">
-<meta property="og:updated_time" content="2019-11-06T12:46:19.171Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;og_image.png">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;thumbnails&#x2F;293924.webp">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;og_image.png">
 
 
 
@@ -76,7 +72,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="3. 无重复字符的最长子串" height="28">
+                <img src="/images/logo.svg" alt="Hexo" height="28">
             
             </a>
         </div>
@@ -125,13 +121,104 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    <div class="card-content">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/tags">标签</a></li>
+            <li class="is-active"><a href="#" aria-current="page">字符串</a></li>
+        </ul>
+        </nav>
+    </div>
+</div>
+
+    
 <div class="card">
     
     <div class="card-image">
-        <span  class="image is-7by1">
+        <a href="/2019/11/06/5.%20%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2/" class="image is-7by1">
+            <img class="thumbnail" src="/images/thumbnails/thumb-1920-9616%20(1).webp" alt="5. 最长回文子串">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-11-06T12:24:11.681Z">2019-11-06</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 分钟 读完 (大约 267 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/11/06/5.%20%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2/">5. 最长回文子串</a>
+            
+        </h1>
+        <div class="content">
+            <p><a href="https://leetcode-cn.com/problems/longest-palindromic-substring/" target="_blank" rel="noopener">leetcode 本题链接</a></p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。</p>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例:"></a>示例:</h3><p>示例 1：</p>
+<blockquote>
+<p>输入: “babad”<br>输出: “bab”<br>注意: “aba” 也是一个有效答案。</p>
+</blockquote>
+<p>示例 2：</p>
+<blockquote>
+<p>输入: “cbbd”<br>输出: “bb”</p>
+</blockquote>
+<h3 id="题解"><a href="#题解" class="headerlink" title="题解:"></a>题解:</h3><ol>
+<li>我的解法是 将可能的结果分成两种类型，逐个判断<figure class="highlight typescript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">var</span> longestPalindrome = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">s: <span class="hljs-built_in">string</span></span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">const</span> str = [...s];</span><br><span class="line">    <span class="hljs-keyword">let</span> result: <span class="hljs-built_in">string</span>[] = [];</span><br><span class="line">    <span class="hljs-keyword">if</span> (str.join(<span class="hljs-string">""</span>) === str.reverse().join(<span class="hljs-string">""</span>)) &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> str.join(<span class="hljs-string">""</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    str.forEach(<span class="hljs-function">(<span class="hljs-params">v, i, a</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="hljs-comment">// 123321 格式</span></span><br><span class="line">        <span class="hljs-keyword">if</span> (v === a[i + <span class="hljs-number">1</span>]) &#123;</span><br><span class="line">            <span class="hljs-keyword">let</span> temp = <span class="hljs-number">1</span>;</span><br><span class="line">            <span class="hljs-keyword">while</span> ((i - temp &gt;= <span class="hljs-number">0</span>) &amp;&amp; (i + <span class="hljs-number">1</span> + temp &lt;= a.length - <span class="hljs-number">1</span>) &amp;&amp; (a[i + <span class="hljs-number">1</span> + temp] === a[i - temp])) &#123;</span><br><span class="line">                temp++;</span><br><span class="line">            &#125;</span><br><span class="line">            temp--;</span><br><span class="line">            <span class="hljs-keyword">if</span> (result.length &lt;= <span class="hljs-number">1</span> + <span class="hljs-number">2</span> * temp) &#123;</span><br><span class="line">                result = a.slice(i - temp, i + <span class="hljs-number">1</span> + temp + <span class="hljs-number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-comment">// 123321 格式</span></span><br><span class="line">        <span class="hljs-keyword">if</span> (a[i + <span class="hljs-number">1</span>] === a[i - <span class="hljs-number">1</span>]) &#123;</span><br><span class="line">            <span class="hljs-keyword">let</span> temp = <span class="hljs-number">1</span>;</span><br><span class="line">            <span class="hljs-keyword">while</span> ((i - temp &gt;= <span class="hljs-number">0</span>) &amp;&amp; (i + temp &lt;= a.length - <span class="hljs-number">1</span>) &amp;&amp; (a[i + temp] === a[i - temp])) &#123;</span><br><span class="line">                temp++;</span><br><span class="line">            &#125;</span><br><span class="line">            temp--;</span><br><span class="line">            <span class="hljs-keyword">if</span> (result.length &lt;= <span class="hljs-number">1</span> + <span class="hljs-number">2</span> * temp) &#123;</span><br><span class="line">                result = a.slice(i - temp, i + temp + <span class="hljs-number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="hljs-keyword">return</span> result.join(<span class="hljs-string">""</span>) || str[<span class="hljs-number">0</span>];</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+速度还挺快的</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>提交时间</th>
+<th>提交结果</th>
+<th>执行用时</th>
+<th>内存消耗</th>
+<th>语言</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>13 天前</td>
+<td>通过</td>
+<td>80 ms</td>
+<td>38.1 MB</td>
+<td>Javascript</td>
+</tr>
+</tbody></table>
+<p><a href="https://github.com/DreamLarva/js-ts-Algorithms/blob/master/leetcode/5.%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2.ts" target="_blank" rel="noopener">仓库本题地址</a></p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-image">
+        <a href="/2019/11/05/3.%20%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2/" class="image is-7by1">
             <img class="thumbnail" src="/images/thumbnails/293924.webp" alt="3. 无重复字符的最长子串">
-        </span>
+        </a>
     </div>
     
     <div class="card-content article ">
@@ -153,7 +240,7 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                3. 无重复字符的最长子串
+                <a class="has-link-black-ter" href="/2019/11/05/3.%20%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2/">3. 无重复字符的最长子串</a>
             
         </h1>
         <div class="content">
@@ -255,15 +342,6 @@
 
         </div>
         
-        <div class="level is-size-7 is-uppercase">
-            <div class="level-start">
-                <div class="level-item">
-                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/" rel="tag">哈希表</a>, <a class="has-link-grey -link" href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" rel="tag">字符串</a>, <a class="has-link-grey -link" href="/tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" rel="tag">滑动窗口</a>
-                </div>
-            </div>
-        </div>
-        
         
         
     </div>
@@ -273,26 +351,7 @@
 
 
 
-<div class="card card-transparent">
-    <div class="level post-navigation is-flex-wrap is-mobile">
-        
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/11/06/5.%20%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">5. 最长回文子串</span>
-            </a>
-        </div>
-        
-        
-        <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019/11/04/2.%20%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0/">
-                <span class="level-item">2. 两数相加</span>
-                <i class="level-item fas fa-chevron-right"></i>
-            </a>
-        </div>
-        
-    </div>
-</div>
+
 
 
 </div>
@@ -804,7 +863,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="3. 无重复字符的最长子串" height="28">
+                    <img src="/images/logo.svg" alt="Hexo" height="28">
                 
                 </a>
                 <p class="is-size-7">
